@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>Index</title>
+     	<script type="text/javascript" src="/pageoffice.js"></script>
+
+    </head>
+    <script type="text/javascript">
+        function AddSeal() {
+            alert(1111);
+            POBrowser.openWindowModeless('word4', 'width=1200px;height=800px;');
+        }
+    </script>
+    <body>
+        <h1 th:inline="text">PageOffice index 集成效果演示</h1>
+        
+        <a href="javascript:POBrowser.openWindowModeless('word3','fullscreen=yes;');">打开文件 </a>
+    </body>
+</html>

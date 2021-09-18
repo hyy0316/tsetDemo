@@ -1,0 +1,84 @@
+/* 节点名称样式 */
+.ztree .node_name {
+    margin: 4px 1px;
+    padding: 0 4px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+/* 编辑时候的输入框 */
+/* .ztree .node_name input{
+	font
+    width: 100%;
+    height: 100%;
+} */
+
+/* 节点展开 前面的加号图标修改 */
+.ztree li span.button.center_close,
+.ztree li span.button.root_close,
+.ztree li span.button.roots_close,
+.ztree li span.button.bottom_close{
+    background: url('../img/plus-square.png') !important;
+    background-size: 100% 100% !important;
+    width: 16px;
+    height: 16px;
+    margin-top: 6px;
+}
+
+
+/* 节点关闭 前面的减号图标修改 */
+.ztree li span.button.center_open,
+.ztree li span.button.root_open,
+.ztree li span.button.roots_open,
+.ztree li span.button.bottom_open{
+    background: url('../img/minus-square.png') !important;
+    background-size: 100% 100% !important;
+    width: 16px;
+    height: 16px;
+    margin-top: 6px;
+}
+
+/* 节点行高拉大 */
+.ztree li a{
+    height: 28px;
+    line-height: 28px;
+}
+
+/* 最后一级的节点图标修改 */
+.ztree li span.button.ico_docu{
+    /* background: @treeFileIcon !important; */
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -6px;
+}
+
+/* 最后一级的节点图标 前面的虚线位置修改 */
+.ztree li span.button.switch{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+/* 节点选中样式 */
+.ztree li a.curSelectedNode{
+    background-color: transparent;
+    height: 28px;
+    /* border: 1px solid transparent; */
+    /* opacity: 1; */
+}
+.ztree li a.curSelectedNode .node_name{
+    background-color: #008FFF;
+    border: none;
+    color: #fff;
+}
+.ztree li a.curSelectedNode .ico_docu{
+    /* background: @treeFileIconHov !important; */
+}
+
+/* 节点移上 */
+.ztree li span.button.add,
+.ztree li span.button.edit,
+.ztree li span.button.remove{
+    margin-top: 4px;
+}

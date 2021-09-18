@@ -1,0 +1,55 @@
+########################################################
+###PageOffice 
+########################################################
+posyspath: d:/lic/
+popassword: 111111
+########################################################
+###THYMELEAF (ThymeleafAutoConfiguration)
+########################################################
+#spring:
+#  thymeleaf:
+#    cache: false
+#    suffix: .html
+#    prefix: classpath:/templates/
+#    mode: HTML5e
+#    encoding: utf-8
+#    servlet:
+#      content-type: text/html
+#  spring.thymeleaf.mode=HTML5
+#spring.thymeleaf.encoding=UTF-8
+# ;charset=<encoding> is added
+#spring.thymeleaf.content-type=text/html
+# set to false for hot refresh
+
+########################################################
+###freemarker (ThymeleafAutoConfiguration)
+########################################################]
+
+spring:
+  freemarker:
+    cache: false
+    template-loader-path: ["classpath:/templates/","classpath:/webapp/"]
+    prefer-file-system-access: false  #��ʹ���ļ�ϵͳ���ȣ���ʹ��classpath�µ���Դ�ļ����ȣ������jar�����к󣬳��ֵ��쳣����
+    allow-request-override: false     #ָ��HttpServletRequest�������Ƿ���Ը���controller��model��ͬ����
+    check-template-location: true     #check-template-location
+    charset: UTF-8
+    content-type: text/html
+    #request/session==true����ͻỰ���Զ������Ƶ�ģ������Լ��У���ʱspring��������Ϊtrue
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: true
+    request-context-attribute: request
+    prefix:
+    suffix: .ftl
+    settings:
+      classic_compatible: true
+  thymeleaf:
+    cache: false
+    suffix: .html
+    prefix: classpath:/templates/
+    mode: HTML5
+    encoding: utf-8
+    servlet:
+      content-type: text/html
+server:
+  port: 8080
